@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'New Tegomin', serif;
+}
+
+.body{
+    background :url("https://wallpaperaccess.com/full/8552481.jpg");
+    background-size: 120vw 100vh;
+    min-height: 100vh;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#board{
+    background: linear-gradient(#8bb962,#60c6dd);
+    height: 92vmin;
+    width: 90vmin;
+    border: 2px solid black; 
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(20,1fr);
+}
+
+.head{
+    background: linear-gradient(#fffbd5,#b20a2c);
+    border: 2px solid #b20a2c;
+     border-radius:10px;
+     transform: scale(1.02);
+}
+
+.snake{
+    background: linear-gradient(#EB5757,#000000);
+     border: 2px solid #b20a2c;
+     border-radius: 15px;
+}
+
+.food{
+    background: linear-gradient(#F2994A,#F2C94C);
+    border: 2px solid#F2994A;
+    border-radius: 12px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 35px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 80px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+}
